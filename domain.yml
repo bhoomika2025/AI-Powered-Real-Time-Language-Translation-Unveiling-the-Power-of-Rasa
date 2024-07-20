@@ -1,0 +1,106 @@
+version: "2.0"
+
+intents:
+  - greet
+  - health_issue
+  - symptoms_description
+  - medical_advice
+  - medication_side_effects
+  - emergency_contact
+  - insurance_information
+  - medical_history_update
+  - diet_advice
+  - fitness_recommendation
+  - mental_health_support
+  - follow_up_appointment
+  - discharge_instructions
+  - feedback
+  - medical_research_information
+
+entities:
+  - name
+  - email
+
+slots:
+  name:
+    type: text
+  email:
+    type: text
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+    - text: "नमस्ते! आज मैं आपकी कैसे मदद कर सकता हूँ?"
+
+  utter_health_issue:
+    - text: "I'm sorry to hear that. Can you describe your symptoms in more detail?"
+    - text: "यह सुनकर मुझे खेद है। क्या आप अपने लक्षणों को अधिक विस्तार से बता सकते हैं?"
+
+  utter_symptoms_description:
+    - text: "Thank you for the details. Based on your symptoms, I recommend you see a doctor."
+    - text: "विवरण के लिए धन्यवाद। आपके लक्षणों के आधार पर, मैं आपको डॉक्टर से मिलने की सलाह देता हूं।"
+
+  utter_medical_advice:
+    - text: "For minor burns, cool the burn under running water for several minutes. For allergy symptoms, avoid allergens and consider over-the-counter antihistamines."
+    - text: "छोटे जलने के लिए, जलने को कई मिनटों तक बहते पानी के नीचे ठंडा करें। एलर्जी के लक्षणों के लिए, एलर्जी से बचें और ओवर-द-काउंटर एंटीहिस्टामाइन पर विचार करें।"
+
+  utter_medication_side_effects:
+    - text: "Common side effects of this medication include nausea, drowsiness, and dizziness. Please consult your doctor for more information."
+    - text: "इस दवा के सामान्य दुष्प्रभावों में मतली, नींद आना और चक्कर आना शामिल हैं। अधिक जानकारी के लिए कृपया अपने डॉक्टर से परामर्श करें।"
+
+  utter_emergency_contact:
+    - text: "In case of a medical emergency, please call 911 or your local emergency number."
+    - text: "चिकित्सा आपात स्थिति में, कृपया 911 या अपने स्थानीय आपातकालीन नंबर पर कॉल करें।"
+
+  utter_insurance_information:
+    - text: "Please provide your insurance details so that I can check the coverage for this procedure."
+    - text: "कृपया अपनी बीमा जानकारी प्रदान करें ताकि मैं इस प्रक्रिया के लिए कवरेज की जांच कर सकूं।"
+
+  utter_medical_history_update:
+    - text: "Thank you for the update. I have noted your recent surgery and changes to your allergies."
+    - text: "अपडेट के लिए धन्यवाद। मैंने आपकी हाल की सर्जरी और आपकी एलर्जी में हुए परिवर्तनों को नोट कर लिया है।"
+
+  utter_diet_advice:
+    - text: "After surgery, avoid spicy and oily foods. For a heart-healthy diet, include fruits, vegetables, and whole grains in your meals."
+    - text: "सर्जरी के बाद, मसालेदार और तैलीय खाद्य पदार्थों से बचें। हृदय-स्वस्थ आहार के लिए, अपने भोजन में फल, सब्जियाँ और साबुत अनाज शामिल करें।"
+
+  utter_fitness_recommendation:
+    - text: "To improve flexibility, try yoga and stretching exercises. For weight loss, consider cardio workouts like running or cycling."
+    - text: "लचीलापन बढ़ाने के लिए, योग और स्ट्रेचिंग व्यायाम आज़माएँ। वजन घटाने के लिए, दौड़ने या साइकिल चलाने जैसे कार्डियो वर्कआउट पर विचार करें।"
+
+  utter_mental_health_support:
+    - text: "I'm sorry to hear that you're feeling this way. We have counseling services available at the hospital. Would you like to schedule an appointment?"
+    - text: "यह सुनकर मुझे खेद है कि आप ऐसा महसूस कर रहे हैं। हमारे अस्पताल में परामर्श सेवाएं उपलब्ध हैं। क्या आप अपॉइंटमेंट शेड्यूल करना चाहेंगे?"
+
+  utter_follow_up_appointment:
+    - text: "It's important to schedule a follow-up appointment. Please let me know your availability, and I'll help set it up."
+    - text: "फॉलो-अप अपॉइंटमेंट शेड्यूल करना महत्वपूर्ण है। कृपया मुझे अपनी उपलब्धता बताएं, और मैं इसे सेट करने में मदद करूंगा।"
+
+  utter_discharge_instructions:
+    - text: "After being discharged, please follow the care instructions provided by your doctor. Take prescribed medications and rest as needed."
+    - text: "छुट्टी मिलने के बाद, कृपया अपने डॉक्टर द्वारा दिए गए देखभाल निर्देशों का पालन करें। निर्धारित दवाएं लें और आवश्यकतानुसार आराम करें।"
+
+  utter_feedback:
+    - text: "We appreciate your feedback. You can leave a review on our website or discuss your concerns with our patient relations team."
+    - text: "हम आपकी प्रतिक्रिया की सराहना करते हैं। आप हमारी वेबसाइट पर समीक्षा छोड़ सकते हैं या हमारी रोगी संबंध टीम के साथ अपनी चिंताओं पर चर्चा कर सकते हैं।"
+
+  utter_medical_research_information:
+    - text: "For clinical trials and the latest treatment information, please visit our research center or check reliable online health resources."
+    - text: "क्लिनिकल परीक्षण और नवीनतम उपचार जानकारी के लिए, कृपया हमारे शोध केंद्र पर जाएँ या विश्वसनीय ऑनलाइन स्वास्थ्य संसाधनों की जाँच करें।"
+
+actions:
+  - utter_greet
+  - utter_health_issue
+  - utter_symptoms_description
+  - utter_medical_advice
+  - utter_medication_side_effects
+  - utter_emergency_contact
+  - utter_insurance_information
+  - utter_medical_history_update
+  - utter_diet_advice
+  - utter_fitness_recommendation
+  - utter_mental_health_support
+  - utter_follow_up_appointment
+  - utter_discharge_instructions
+  - utter_feedback
+  - utter_medical_research_information
